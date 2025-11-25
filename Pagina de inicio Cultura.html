@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReDICE - Soluciones Digitales Innovadoras</title>
+    <!-- Carga de Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos personalizados para el tema Inter y fondo */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9fb; /* Fondo muy claro */
+            color: #72a852;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- 1. Barra de Navegación (Header) -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-2xl font-bold text-green-400 rounded-lg p-2 transition duration-300 hover:bg-green-50">ReDICE</a>
+                </div>
+                
+                <!-- Menú de Navegación (Escritorio) -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#inicio" class="text-gray-600 hover:text-green-600 transition duration-150 font-medium">Inicio</a>
+                    <a href="#servicios" class="text-gray-600 hover:text-green-600 transition duration-150 font-medium">Objetivos</a>
+                    <a href="#contacto" class="text-white bg-green-400 hover:bg-green-700 px-3 py-1 rounded-full shadow-lg transition duration-150">Contacto</a>
+                </nav>
+
+                <!-- Botón de Menú Móvil (Hamburguesa) -->
+                <button id="mobile-menu-button" class="md:hidden p-2 rounded-md text-gray-700 hover:bg-gray-100 transition duration-150">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Menú Móvil Desplegable -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg border-t border-gray-100">
+            <a href="#inicio" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-50">Inicio</a>
+            <a href="#servicios" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-50">Objetivos</a>
+            <a href="#acerca" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-50">Acerca de</a>
+            <a href="#contacto" class="block py-2 px-4 text-sm text-white bg-green-400 hover:bg-green-400 mt-2">Contacto</a>
+        </div>
+    </header>
+
+    <!-- 2. Sección Principal (Hero) -->
+    <main id="inicio" class="pt-16 pb-24 sm:pt-24 sm:pb-32 lg:pt-32 lg:pb-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            
+            <!-- Título Principal -->
+            <h1 class="text-5xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-gray-900 leading-tight mb-4">
+                Soluciones <span class="text-green-400">Digitales</span> Para Toda Puebla
+            </h1>
+            
+            <!-- Subtítulo / Propuesta de Valor -->
+            <p class="mt-6 text-xl text-gray-600 max-w-3xl mx-auto">
+                Ayudando a que puebla sea un estado mucho más ecológico, más humano y mucho más amigable.
+            </p>
+            
+            <!-- Botón de Llamada a la Acción (CTA) -->
+            <div class="mt-10 flex justify-center space-x-4">
+                <a href="#acerca" class="bg-white border border-gray-300 hover:bg-gray-100 text-gray-700 font-bold py-3 px-8 rounded-full shadow-md transition duration-300 transform hover:scale-105">
+                    Ver Proyecto
+                </a>
+            </div>
+            
+            <!-- Imagen / Ilustración Placeholder -->
+            <div class="mt-20">
+                <img class="mx-auto w-full max-w-5xl rounded-2xl shadow-2xl transition duration-500 hover:shadow-light-green-300/50" 
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Mexico-Popocatepetl.jpg/1280px-Mexico-Popocatepetl.jpg" 
+                    alt="Ilustración de equipo trabajando en desarrollo web en la nube"
+                    onerror="this.onerror=null; this.src='https://placehold.co/1200x500/4f46e5/ffffff?text=Tu+Proyecto+Digital';"
+                >
+            </div>
+
+        </div>
+    </main>
+
+    <!-- 3. Sección de Servicios/Características -->
+    <section id="servicios" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-extrabold text-center text-gray-900 mb-4">
+                Nuestros <span class="text-green-400">Objetivos</span> Clave
+            </h2>
+            <p class="text-lg text-center text-gray-600 mb-12">
+                Lo que necesita nuestra sociedad para avanzar hacia el futuro.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Tarjeta de Servicio 1 -->
+                <div class="bg-white p-6 sm:p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 border-t-4 border-green-500">
+                    <div class="text-green-400 mb-4">
+                        <!-- Icono de Diseño Web (Ejemplo: SVG de un monitor) -->
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1v-3.25m-7.25 0h12.5M12 12h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">¿A quien va dirigido?</h3>
+                    <p class="text-gray-600">
+                        Buscamos beneficiar a las comunidades rurales y periurbanas del estado de Puebla que presentan limitaciones en el acceso a agua salubre y carecen de mecanismos sistematizados para monitorear su calidad.
+                    </p>
+                </div>
+
+                <!-- Tarjeta de Servicio 2 -->
+                <div class="bg-white p-6 sm:p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 border-t-4 border-green-500">
+                    <div class="text-green-400 mb-4">
+                        <!-- Icono de Desarrollo de Apps (Ejemplo: SVG de un móvil) -->
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">¿Por qué es innovador?</h3>
+                    <p class="text-gray-600">
+                         Integramos herramientas digitales de bajo costo con un enfoque social y comunitario, permitiendo transformar la manera en que se monitorea y gestiona la calidad del agua en zonas con infraestructura limitada.
+                    </p>
+                </div>
+
+                <!-- Tarjeta de Servicio 3 -->
+                <div class="bg-white p-6 sm:p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 border-t-4 border-green-500">
+                    <div class="text-green-400 mb-4">
+                        <!-- Icono de Consultoría SEO (Ejemplo: SVG de una lupa) -->
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Impactos y beneficios</h3>
+                    <p class="text-gray-600">
+                        Buscamos que las comunidades reducan su dependencia de la red eléctrica centralizada, cuenten con mayor continuidad de suministro y mejoren su capacidad para enfrentar interrupciones prolongadas o variaciones de voltaje.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Footer (Pie de Página) -->
+    <footer class="bg-gray-800 text-white py-12" id="contacto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                
+                <!-- Columna 1: Info de Contacto -->
+                <div>
+                    <h4 class="text-xl font-semibold mb-4 text-green-400">Contáctanos</h4>
+                    <p class="text-sm mb-2">Email: contacto@redice-puebla.org </p>
+                    <p class="text-sm mb-2">Teléfono: +52 722 807 9136</p>
+                    <p class="text-sm">Dirección: Puebla, México</p>
+                </div>
+
+                <!-- Columna 2: Enlaces Rápidos -->
+                <div>
+                    <h4 class="text-xl font-semibold mb-4 text-green-400">Enlaces</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#inicio" class="text-sm hover:text-green-300 transition duration-150">Inicio</a></li>
+                        <li><a href="#servicios" class="text-sm hover:text-green-300 transition duration-150">Servicios</a></li>
+                        <li><a href="#acerca" class="text-sm hover:text-green-300 transition duration-150">Acerca de Nosotros</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3: Legal -->
+                <div>
+                    <h4 class="text-xl font-semibold mb-4 text-green-400">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-sm hover:text-green-300 transition duration-150">Política de Privacidad</a></li>
+                        <li><a href="#" class="text-sm hover:text-green-300 transition duration-150">Términos y Condiciones</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+            
+            <!-- Derechos Reservados -->
+            <div class="border-t border-gray-700 mt-10 pt-6 text-center">
+                <p class="text-sm text-gray-400">&copy; 2025 ReDICE. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script para la funcionalidad del menú móvil -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const button = document.getElementById('mobile-menu-button');
+            const menu = document.getElementById('mobile-menu');
+
+            // Toggle del menú
+            button.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+
+            // Cerrar el menú al hacer clic en un enlace (para móviles)
+            const menuLinks = menu.querySelectorAll('a');
+            menuLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (!menu.classList.contains('hidden')) {
+                        menu.classList.add('hidden');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
